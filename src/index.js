@@ -652,6 +652,7 @@ export default class Carousel extends React.Component {
     return React.Children.map(children, (child, index) => {
       return (
         <li
+          draggable
           className="slider-slide"
           style={this.getSlideStyles(index, positionValue)}
           key={index}
